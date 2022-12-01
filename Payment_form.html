@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment_form.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <form action="" method="get" >
+            <h1 class="main_heading">Payment Form</h1>
+            <h3>User Information</h3>
+
+            <h6>Required fields are marked by *</h6>
+
+            <p>Name *
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+            </p>
+
+            <fieldset>
+                <Legend>Gender *</Legend>
+                <p>
+                    <input type="radio" name="Gender" id="Male" required> Male
+                    <input type="radio" name="Gender" id="Female" required> Female
+                    <input type="radio" name="Gender" id="Other" required>Other
+                </p>
+            </fieldset>
+
+            <p>Address <textarea name="address" placeholder="Enter your address" id="address" cols="100"
+                    rows="7"></textarea></p>
+
+            <p>Email *<input type="email" placeholder="Enter your email" name="email" id="email" required></p>
+
+            <p>Pincode *<input type="number" placeholder="Enter your pincode" name="pincode" id="pincode" required></p>
+
+            <hr>
+            <h3 class="paymentinformation">Payment Information</h3>
+            <p>Card Type *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select A Card Type--</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="AmericanExpress"></option>
+                </select>
+            </p>
+            <p>Card Number *<input type="number" placeholder="Enter your card number" name="card_number"
+                    id="card_number" required></p>
+
+            <p>Exp. Date *<input type="date" name="exp_date" id="exp_date" required></p>
+
+            <p>CVV *<input type="password" placeholder="Enter your CVV" name="cvv" id="cvv" required></p>
+
+            <p>Name On Card *<input type="text" placeholder="Enter name on card" name="card_holder_name" required></p>
+
+            <input type="submit" value="Pay Now">
+
+        </form>
+    </div>
+</body>
+
+</html>
